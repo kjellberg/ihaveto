@@ -9,6 +9,7 @@ import datetime
 import signal
 import sys
 
+VERSION = '1.1'
 home = os.path.expanduser("~")
 app_dir = home  + '/.ihaveto/'
 db = SqliteDatabase( app_dir + 'entires.db')
@@ -124,7 +125,7 @@ def logo():
 	print("  ___ _                 _                 ")
 	print(" |_ _| |_  __ ___ _____| |_ ___   __ ___  ")
 	print("  | || ' \/ _` \ V / -_)  _/ _ \_/ _/ _ \ ")
-	print(" |___|_||_\__,_|\_/\___|\__\___(_)__\___/ ")
+	print(" |___|_||_\__,_|\_/\___|\__\___(_)__\___/ {}".format(VERSION))
 	print("                                          ")
 
 
